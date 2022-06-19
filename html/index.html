@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <title>Jogo da Forca</title>  
+  <link rel="stylesheet" type="text/css"  href="./css/estilo_desktop.css"/>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./imgs/logo.svg" alt="" >
+        </div>
+    </header>
+
+ <main>
+     <div class="container">
+        <section class="menu-section">
+            <div class="menu-content">
+                <button id="startBtn" class="main-button"  onclick="irparaJogo()">Começar a jogar</button>
+            </div>
+        </section>
+    </div>
+    <section class="game-section hide">
+        <input type="text" class="hidden-input">
+
+        <div class="game-content">
+            <div class="hangman-img">
+                <img src="imgs/6-try.svg" alt="" id="man">
+                <img src="./imgs/fruta.png" alt="" >
+              <!--  <h2 id='pressed'>Teclas pressionadas: </h2>  -->
+            </div>
+
+            <div id="letra2"  class="user-right-letters">
+                <span></span>
+           </div>
+    
+            <div id="letra"  class="user-right-letters">
+                 <span></span>
+            </div>
+
+            <div id = 'pressed' class="user-wrong-letters">
+                <span></span>
+            </div>
+
+
+            <div class="buttons">
+                <button id="newGameBtn" class="main-button" onclick="irparaJogo()">Novo jogo</button>
+                <button id="surrenderBtn" class="second-button" onclick="desistir()">Desistir</button>
+            </div>
+
+
+        </div>
+    </section>
+   
+ </main>
+</body>
+<script type="text/javascript" language="javascript" src="./js/funcoes.js"></script>
+</html>
